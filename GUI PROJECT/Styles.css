@@ -2,3 +2,9 @@
 body{
   margin-top: 20px;
 }
+
+/* Code for the image style on index.html */
+.panel-body{
+  width=300;
+  height=300;
+}
