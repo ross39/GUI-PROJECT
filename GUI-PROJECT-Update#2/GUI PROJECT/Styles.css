@@ -1,0 +1,34 @@
+/* Style for seach box on products.html */
+body{
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  margin
+}
+
+/* Code for the image style on index.html */
+.panel-body{
+  width: 250%;
+  height: 125%;
+  margin-left: 15%;
+  margin-bottom: 10%;
+  padding-bottom: 10%;
+  overflow: initial;
+}
+.panel-footer
+{
+ padding-top: 2% ;
+ overflow: initial;
+}
+img
+{
+  overflow: initial;
+  height: 25%;
+  width: 25%;
+  margin-left:1%;
+}
+#slide
+{
+ margin-left:25%;
+ width:50%;
+}
