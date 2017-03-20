@@ -4,7 +4,7 @@
 <title>PC mart</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,height=device-height initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -13,13 +13,31 @@
 
 
 <body>
-  <div class="jumbotron">
-  <div class="container text-center">
-    <h1>PC mart</h1>
-    <p>We provide parts for all laptops and desktop machines</p>
-  </div>
+  <!--div for header of class jumbotron-->
+  <div class="jumbotron" id = "jumbo">  
+	  <div class="container text-center">
+		<div id = "welcome">
+		<h1>PC mart</h1>
+		<p>We provide parts for all laptops and desktop machines</p>
+		</div>
+			<!--div for slideshow-->
+			<div id = "Slideshow1" class = "carousel slide"  data-ride="carousel">
+				<ol class = "carousel-indicators">
+					<li data-target = "#Slideshow1" data-slide-to = "0" class = "active"> </li>
+					<li data-target = "#Slideshow1" data-slide-to = "1"> </li>
+				</ol>
+			<!--Image wrapper classes-->
+				<div class = "carousel-inner" role = "listbox">
+					<div class = "item active">
+						<img src = "./images/chip.jpg" alt = "image of pc parts" id = "slide" >
+					</div>
+					<div class = "item">
+					<img src = "./images/cpu.jpg" alt = "image of pc CPU" id = "slide">
+				</div>
+			</div>
+	  	</div>
+	  </div>
 </div>
-
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -28,19 +46,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Logo</a>
+      -<a class="navbar-brand" href="#" id = "logo">PC Mart</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Deals</a></li>
-        <li><a href="#">Stores</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="Deals.html">Deals</a></li>
+        <li><a href="Stores.html">Stores</a></li>
+        <li><a href="Contact.html">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        <li><a href="yourAccount.html"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
       </ul>
     </div>
   </div>
@@ -51,21 +69,24 @@
     <div class="col-sm-4">
       <div class="panel panel-primary">
         <div class="panel-heading">DEAL OF THE WEEK</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-body"><img src="images/images2.jpg" class="img-responsive" alt="Image">
+        </div>
         <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="panel panel-danger">
         <div class="panel-heading">DAILY SPECIAL</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-body"><img src="images/images3.jpg" class="img-responsive"  alt="Image">
+        </div>
         <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="panel panel-success">
         <div class="panel-heading">HOT TECH</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-body"><img src="images/images4.jpg" class="img-responsive" alt ="Image">
+        </div>
         <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
     </div>
@@ -77,27 +98,34 @@
     <div class="col-sm-4">
       <div class="panel panel-primary">
         <div class="panel-heading">BLACK FRIDAY DEAL</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-body">
+			<img src="images/images5.jpg" class="img-responsive" alt="Image">
+			</div>
         <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="panel panel-primary">
         <div class="panel-heading">BLACK FRIDAY DEAL</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-body">
+			<img src="images/images.jpg" class="img-responsive" alt="Image">
+			</div>
         <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="panel panel-primary">
         <div class="panel-heading">BLACK FRIDAY DEAL</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-body">
+			<img src="images/imgres.jpg" class="img-responsive"  alt="Image">
+			</div>
         <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
     </div>
   </div>
-</div><br><br>
-
+</div>
+<br>
+<br>
 <footer class="container-fluid text-center">
   <p>Online Store Copyright</p>
   <form class="form-inline">Get deals:
@@ -105,21 +133,8 @@
     <button type="button" class="btn btn-danger">Sign Up</button>
   </form>
 </footer>
+ 
+
+
 
 </body>
-
-
-
-</body>
-
-
-
-
-
-
-
-
-
-
-
-</html>
