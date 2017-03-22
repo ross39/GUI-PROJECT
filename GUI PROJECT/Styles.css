@@ -1,8 +1,4 @@
-/* Style for seach box on products.html */
-body{
-  margin-top: 20px;
-}
-/* Code for the image style on index.html */
+
 .panel-body{
   width: 250%;
   height: 125%;
@@ -11,60 +7,63 @@ body{
   padding-bottom: 10%;
   overflow: initial;
 }
-.container
-{
-  width: 50%;
-}
 .panel-footer
 {
  padding-top: 2% ;
  overflow: initial;
 }
-img
+img	/*set images to be a quarter of original height and allow them to scale to user display*/
 {
   overflow: initial;
-  height: 50%;
+  height: 25%;
   width: 25%;
 }
-#slide
+.slide
 {
- margin-left:25%;
- width:50%;
+ margin-left:10%;
+ width:80%;
 }
  
-#jumbo
+#jumbo	/*Slideshow background*/
 {
    background-image: url(images/components.jpg); 
-   background-size: 500 px 300 px;
    background-repeat: no-repeat;
+   background-size:cover;
    color: white;
-   height: "50%";	
    font-style: italic ;
+   font-size: 200%;
 }
-.carousel-inner > .item > img
+#jumbo-deals
+{
+	 background-image: url(images/deals-head.jpg);
+	 background-repeat: no-repeat;
+	 background-size:cover;
+	 color:white;
+}
+.carousel-inner > .item > img		/*Make images in slideshow less large*/
 {
 	height: 250px;
 }
-.panel-body:hover
+.panel-body:hover	/*make images opaque when user hovers over them to make page interactive*/
 {
   opacity:0.5;
 }
-.jumbotron-background:hover
-{
-  opacity:0.3;
-}
-#welcome
+#welcome	/*Welcome banner*/
 {
   background: blue;
   opacity: 0.9;
 }
-#logo
+#logo	/*code for PC Mart logo*/
 {
-	color: yellow;
-	background: red;
+	color: green;
+	background: black;
 }
 body
 {
    width: 100%;
    height: 100%;
+}
+#email
+{
+	margin-left:0.8%;
 }

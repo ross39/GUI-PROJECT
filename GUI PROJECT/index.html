@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>PC mart</title>
+<title>PC Mart</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,height=device-height initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel = "icon" href = "./images/favicon-logo.png">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="Styles.css">
@@ -14,10 +15,10 @@
 
 <body>
   <!--div for header of class jumbotron-->
-  <div class="jumbotron" id = "jumbo">  
+  <div class="jumbotron" id = "jumbo" title = "You'll never find a better deal!">  
 	  <div class="container text-center">
 		<div id = "welcome">
-		<h1>PC mart</h1>
+		<h1 class = "lead">PC mart</h1>
 		<p>We provide parts for all laptops and desktop machines</p>
 		</div>
 			<!--div for slideshow-->
@@ -29,10 +30,10 @@
 			<!--Image wrapper classes-->
 				<div class = "carousel-inner" role = "listbox">
 					<div class = "item active">
-						<img src = "./images/chip.jpg" alt = "image of pc parts" id = "slide" >
+						<img src = "./images/chip.jpg" alt = "image of pc parts" class = "slide" title = "Welcome to our E-commerce page">
 					</div>
 					<div class = "item">
-					<img src = "./images/cpu.jpg" alt = "image of pc CPU" id = "slide">
+					<img src = "./images/cpu.jpg" alt = "image of pc CPU" class = "slide" title = "We hope you will be a returning customer!">
 				</div>
 			</div>
 	  	</div>
@@ -128,8 +129,12 @@
 <br>
 <footer class="container-fluid text-center">
   <p>Online Store Copyright</p>
-  <form class="form-inline">Get deals:
-    <input type="email" class="form-control" size="50" placeholder="Email Address">
+  <form class="form-inline">E-mail:
+    <input type="email" class="form-control" size="50" placeholder="Email Address" id = "email">
+	<br>
+	Password:
+	<input type = "password" class = "form-control" size = "50" placeholder = "password" id = "pass">
+	<br>
     <button type="button" class="btn btn-danger">Sign Up</button>
   </form>
 </footer>
