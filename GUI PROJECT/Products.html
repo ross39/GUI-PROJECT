@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="Styles.css">
+<link rel="stylesheet" type="text/css" href="Products.css">
 <script src="Reaction.js"></script>
 </head>
 
@@ -16,110 +16,143 @@
   <body>
     <div class="jumbotron">
     <div class="container text-center">
-      <h1>We provide 100% authentic parts for all PCs and laptops</h1>
+      <h1 id = "productHead"><i>We provide 100% authentic parts for all PCs and laptops</i></h1>
     </div>
   </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-8 col-xs-offset-2">
-        <div class="input-group">
-          <div class="input-group-btn search-panel">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toogle="dropdown">
-              <span id="search_concept">Filter by</span><span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu">
-              <li<a href="#contains"><contains</a></li>
-              <li<a href="#its_equal"><Its equal</a></li>
-              <li<a href="#greater_than"><less than</a></li>
-              <li<a href="#less_than"><greater than</a></li>
-                <li class="divider"></li>
-                <li><a href="#all">Anything</a></li>
-              </ul>
+  <!-- Code for navigator -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        -<a class="navbar-brand" href="#" id = "logo">PC Mart</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li class = "active"><a href="Products.html">Products</a></li>
+          <li><a href="Deals.html">Deals</a></li>
+          <li><a href="Stores.html">Stores</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="yourAccount.html"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+          <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End code for navigator -->
+  <!--Div for laptops -->
+<div id = "laptops">
+  <h2>Laptops</h2>
+	<div class="row">  <!--Row for laptops-->
+		<div class="col-sm-4">
+			<div class="panel panel-info">
+					<div class="panel-heading">Dell Inspiron 15 7000</div>
+							<img src = "./images/products/dell1.jpg" alt = "A picture of a dell laptop" title = "Dell Inspirion"/>
+      </div>
+      <div class="panel-footer">
+	         <div id = "price">
+			          <strong>Price: €450</strong>
+	          </div>
+            <div>
+		            <input type = "text" placeholder = "Quantity:" id = "Inspirion">   <!-- Allow user to enter quantity-->
+		              <input type = "button" value = "Add to cart!" id = "Inspirion1">  <!-- Allow user to add to cart and execute function-->
             </div>
-            <input type="hidden" name="search_param" value="all" id="search_param">
-            <input type="text" class="form-control" name="x" placeholder="Search term...">
-            <span class="input-group-btn">
-              <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
-            </span>
-          </div>
-        </div>
       </div>
     </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="panel panel-primary">
-          <div class="panel-heading">DEAL OF THE WEEK</div>
-          <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-          <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+  <div class="col-sm-4">
+    <div class="panel panel-info">
+        <div class="panel-heading">Macbook Air</div>
+            <img src = "./images/products/macbook.jpeg" alt = "A picture of a macbook air" title = "Macbook air"/>
+    </div>
+    <div class="panel-footer">
+		    <div>
+            <strong>Price: €600</strong>
         </div>
+          <input type = "text" placeholder = "Quantity:" id = "Macbook">
+          <input type = "button" value = "Add to cart!" id = "Macbook1">
+    </div>
+  </div>
 
-
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="panel panel-primary">
-                <div class="panel-heading">DEAL OF THE WEEK</div>
-                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="panel panel-danger">
-                <div class="panel-heading">DAILY SPECIAL</div>
-                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="panel panel-success">
-                <div class="panel-heading">HOT TECH</div>
-                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-              </div>
-            </div>
+	<div class="col-sm-4">
+    <div class="panel panel-info">
+        <div class="panel-heading">HP Pavillon</div>
+        <img src = "./images/products/hppavillon.jpeg" alt = "A picture of a HP pavillon" title = "HP pavillon"/>
+      </div>
+        <div class="panel-footer">
+		    <div>
+          <strong>Price: €500</strong>
+        </div>
+        <input type = "text" placeholder = "Quantity:" id = "hpPavillon">
+        <input type = "button" value = "Add to cart!" id = "hpPavillon1">
+        </div>
+    </div>
+     <div class="col-sm-4">
+       <br>
+       <div class="panel panel-info">
+           <div class="panel-heading">N850 Core i3 Gaming Laptop with Nvidia GeForce GT940mx Graphics Card</div>
+           <img src = "./images/products/gaminglaptop.jpg" alt = "A picture of a N850" title = "N850"/>
+         </div>
+           <div class="panel-footer">
+   		    <div>
+             <strong>Price: €800</strong>
+           </div>
+           <input type = "text" placeholder = "Quantity:" id = "N850">
+           <input type = "button" value = "Add to cart!" id = "N8501">
+           </div>
+       </div>
+      <div class = "col-sm-4">
+        <br>
+        <div class="panel panel-info">
+           <div class="panel-heading"> Lenovo Thinkpad Yoga 11E (3rd Gen) 11.6" Touchscreen Convertible Ultrabook </div>
+           <img src = "./images/products/lenovo.jpg" alt = "A picture of a Lenovo thinkpad 11e" title = "Lenovo Thinkpad"/>
+         </div>
+           <div class="panel-footer">
+           <div>
+             <strong>Price: €250</strong>
+           </div>
+           <input type = "text" placeholder = "Quantity:" id = "Lenovo">
+           <input type = "button" value = "Add to cart!" id = "Lenovo1">
+           </div>
+       </div>
+  </div>
+</div>
+<div id = "Power">
+  <h2>Power Supply Units</h2>
+    <div class = "col-sm-4">
+      <br>
+      <div class="panel panel-info">
+         <div class="panel-heading"> CORSAIR CXM series CX750M 750W Power Supply</div>
+         <img src = "./images/products/psu1.png" alt = "CX750M Power Supply " title = "CORSAIR CXM series CX750M 750W"/>
+       </div>
+         <div class="panel-footer">
+         <div>
+           <strong>Price: €90</strong>
+         </div>
+         <input type = "text" placeholder = "Quantity:" id = "Corsair">
+         <input type = "button" value = "Add to cart!" id = "Corsair1">
+         </div>
+     </div>
+     <div class = "col-sm-4">
+       <br>
+       <div class="panel panel-info">
+          <div class="panel-heading"> EVGA 600 B1, 80+ Bronze 600W Power Supply</div>
+          <img src = "./images/products/psu2.jpg" alt = "EVGA 600 B1, 80+ BRONZE 600W PSU " title = "EVGA 600 B1, 80+ BRONZE 600W,"/>
+        </div>
+          <div class="panel-footer">
+          <div>
+            <strong>Price: €80</strong>
           </div>
-        </div><br>
-
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="panel panel-primary">
-                <div class="panel-heading">BLACK FRIDAY DEAL</div>
-                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="panel panel-primary">
-                <div class="panel-heading">BLACK FRIDAY DEAL</div>
-                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="panel panel-primary">
-                <div class="panel-heading">BLACK FRIDAY DEAL</div>
-                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-              </div>
-            </div>
+          <input type = "text" placeholder = "Quantity:" id = "Evga">
+          <input type = "button" value = "Add to cart!" id = "Evga1">
           </div>
-
-
-
-
-
-
-
-
-
-
-
+      </div>
+</div>
 </body>
-
-
-
 </html>
