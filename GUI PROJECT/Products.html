@@ -60,8 +60,8 @@
 			          <strong>Price: €450</strong>
 	          </div>
             <div>
-		            <input type = "text" placeholder = "Quantity:" id = "Inspirion">   <!-- Allow user to enter quantity-->
-		              <input type = "button" value = "Add to cart!" id = "Inspirion1">  <!-- Allow user to add to cart and execute function-->
+		            <input type = "text" placeholder = "Quantity:" id = "0">   <!-- Allow user to enter quantity-->
+		              <input type = "button" value = "Add to cart!" onclick = "add()">  <!-- Allow user to add to cart and execute function-->
             </div>
       </div>
     </div>
@@ -75,8 +75,8 @@
 		    <div>
             <strong>Price: €600</strong>
         </div>
-          <input type = "text" placeholder = "Quantity:" id = "Macbook">
-          <input type = "button" value = "Add to cart!" id = "Macbook1">
+          <input type = "text" placeholder = "Quantity:" id = "1">
+          <input type = "button" value = "Add to cart!">
     </div>
   </div>
 
@@ -89,8 +89,8 @@
 		    <div>
           <strong>Price: €500</strong>
         </div>
-        <input type = "text" placeholder = "Quantity:" id = "hpPavillon">
-        <input type = "button" value = "Add to cart!" id = "hpPavillon1">
+        <input type = "text" placeholder = "Quantity:" id = "2">
+        <input type = "button" value = "Add to cart!">
         </div>
     </div>
      <div class="col-sm-4">
@@ -103,8 +103,8 @@
    		    <div>
              <strong>Price: €800</strong>
            </div>
-           <input type = "text" placeholder = "Quantity:" id = "N850">
-           <input type = "button" value = "Add to cart!" id = "N8501">
+           <input type = "text" placeholder = "Quantity:" id = "3">
+           <input type = "button" value = "Add to cart!">
            </div>
        </div>
       <div class = "col-sm-4">
@@ -117,13 +117,13 @@
            <div>
              <strong>Price: €250</strong>
            </div>
-           <input type = "text" placeholder = "Quantity:" id = "Lenovo">
-           <input type = "button" value = "Add to cart!" id = "Lenovo1">
+           <input type = "text" placeholder = "Quantity:" id = "4">
+           <input type = "button" value = "Add to cart!">
            </div>
        </div>
   </div>
 </div>
-<div id = "Power">
+<div id = "power">
   <h2>Power Supply Units</h2>
     <div class = "col-sm-4">
       <br>
@@ -135,8 +135,8 @@
          <div>
            <strong>Price: €90</strong>
          </div>
-         <input type = "text" placeholder = "Quantity:" id = "Corsair">
-         <input type = "button" value = "Add to cart!" id = "Corsair1">
+         <input type = "text" placeholder = "Quantity:" id = "5">
+         <input type = "button" value = "Add to cart!">
          </div>
      </div>
      <div class = "col-sm-4">
@@ -149,10 +149,185 @@
           <div>
             <strong>Price: €80</strong>
           </div>
-          <input type = "text" placeholder = "Quantity:" id = "Evga">
-          <input type = "button" value = "Add to cart!" id = "Evga1">
+          <input type = "text" placeholder = "Quantity:" id = "6">
+          <input type = "button" value = "Add to cart!">
           </div>
       </div>
 </div>
+<div id = "graphics">
+<br>
+<h2> Graphics cards</h2>
+<div class = "col-sm-4">
+<br>
+<div class = "panel panel-info">
+<div class = "panel-heading">NVIDIA 960</div>
+<img src = "./images/products/nvidia960.jpg" alt = "a pic of a nvidia 960">
+</div>
+<div class="panel-footer">
+          <div>
+            <strong>Price: €200</strong>
+          </div>
+          <input type = "text" placeholder = "Quantity:" id = "7">
+          <input type = "button" value = "Add to cart!">
+          </div>
+      </div>
+<div class = "col-sm-4">
+	<br>
+	<div class = "panel panel-info">
+			<div class = "panel-heading">AMD R9 380</div>
+				<img src = "./images/products/r9380.jpg" alt = "a pic of a nvidia 960">
+			</div>
+	<div class="panel-footer">
+		<div>
+            <strong>Price: €180</strong>
+        </div>
+          <input type = "text" placeholder = "Quantity:" id = "8">
+          <input type = "button" value = "Add to cart!">
+	</div>
+ </div>
+ </div>
+ <div id = "monitors">
+<br>
+<h2>Monitors</h2>
+<div class = "col-sm-4">
+<br>
+<div class = "panel panel-info">
+<div class = "panel-heading">qnix qx2710</div>
+<img src = "./images/products/qnix.jpg" alt = "a pic of a qnix qx2710">
+</div>
+<div class="panel-footer">
+          <div>
+            <strong>Price: €230</strong>
+          </div>
+          <input type = "text" placeholder = "Quantity:" id = "9">
+          <input type = "button" value = "Add to cart!">
+          </div>
+      </div>
+<div class = "col-sm-4">
+	<br>
+	<div class = "panel panel-info">
+			<div class = "panel-heading">BenQ GW2765HT</div>
+				<img src = "./images/products/benq.jpg" alt = "a pic of a BenQ GW2765HT">
+			</div>
+	<div class="panel-footer">
+		<div>
+            <strong>Price: €300</strong>
+        </div>
+          <input type = "text" placeholder = "Quantity:" id = "10">
+          <input type = "button" value = "Add to cart!">
+	</div>
+ </div>
+ </div> 
+<div id = "processors">
+<br>
+<h2>Processors</h2>
+<div class = "col-sm-4">
+<br>
+<div class = "panel panel-info">
+<div class = "panel-heading">amd ryzen 7 1800x</div>
+<img src = "./images/products/amdryzen.png" alt = "amd ryzen 7 1800x">
+</div>
+<div class="panel-footer">
+          <div>
+            <strong>Price: €350</strong>
+          </div>
+          <input type = "text" placeholder = "Quantity:" id = "11">
+          <input type = "button" value = "Add to cart!">
+          </div>
+      </div>
+<div class = "col-sm-4">
+	<br>
+	<div class = "panel panel-info">
+			<div class = "panel-heading">Intel core i5 6600k</div>
+				<img src = "./images/products/corei5.jpg" alt = "a pic of a BenQ GW2765HT">
+			</div>
+	<div class="panel-footer">
+		<div>
+            <strong>Price: €300</strong>
+        </div>
+          <input type = "text" placeholder = "Quantity:" id = "12">
+          <input type = "button" value = "Add to cart!">
+	</div>
+ </div>
+ </div>
+ <div id = "harddrives">
+<br>
+<h2>Hard drives</h2>
+<div class = "col-sm-4">
+<br>
+<div class = "panel panel-info">
+<div class = "panel-heading">Western Digital Red 4 tb</div>
+<img src = "./images/products/wdred.jpg" alt = "WD red 4tb">
+</div>
+<div class="panel-footer">
+          <div>
+            <strong>Price: €150</strong>
+          </div>
+          <input type = "text" placeholder = "Quantity:" id = "13">
+          <input type = "button" value = "Add to cart!">
+          </div>
+      </div>
+<div class = "col-sm-4">
+	<br>
+	<div class = "panel panel-info">
+			<div class = "panel-heading">Kingston SSD 240GB</div>
+				<img src = "./images/products/kingstonssd.jpg" alt = "Kingston SSD">
+			</div>
+	<div class="panel-footer">
+		<div>
+            <strong>Price: €140</strong>
+        </div>
+          <input type = "text" placeholder = "Quantity:" id = "14">
+          <input type = "button" value = "Add to cart!" >
+	</div>
+ </div>
+ </div> 
+ <div id = "miscellaneous">
+<br>
+<h2>Ram,keyboards and motherboards</h2>
+<div class = "col-sm-4">
+<br>
+<div class = "panel panel-info">
+<div class = "panel-heading">Corsair limited edition dominator 16GB</div>
+<img src = "./images/products/corsair.png" alt = "Corsair dominator">
+</div>
+<div class="panel-footer">
+          <div>
+            <strong>Price: €200</strong>
+          </div>
+          <input type = "text" placeholder = "Quantity:" id = "15">
+          <input type = "button" value = "Add to cart!">
+          </div>
+      </div>
+<div class = "col-sm-4">
+	<br>
+	<div class = "panel panel-info">
+			<div class = "panel-heading">Corsair keyboard mechanical</div>
+				<img src = "./images/products/corsairkeyboard.jpg" alt = "corsair keyboard">
+			</div>
+	<div class="panel-footer">
+		<div>
+            <strong>Price: €80</strong>
+        </div>
+          <input type = "text" placeholder = "Quantity:" id = "16">
+          <input type = "button" value = "Add to cart!">
+	</div>
+ </div>
+ <div class = "col-sm-4">
+	<br>
+	<div class = "panel panel-info">
+			<div class = "panel-heading">MSI Z170</div>
+				<img src = "./images/products/motherboard.png" alt = "MSI Z170">
+			</div>
+	<div class="panel-footer">
+		<div>
+            <strong>Price: €120</strong>
+        </div>
+          <input type = "text" placeholder = "Quantity:" id = "17">
+          <input type = "button" value = "Add to cart">
+	</div>
+ </div>
+ </div>
+ <script src = "products.js"></script>
 </body>
 </html>
