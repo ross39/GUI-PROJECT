@@ -4,7 +4,7 @@
   margin-left: 15%;
   margin-bottom: 10%;
   padding-bottom: 10%;
-  overflow: scroll;
+  overflow: initial;
 }
 .panel-footer
 {
@@ -14,9 +14,8 @@
 img	/*set images to be less than the original height  and width and allow them to scale to user display*/
 {
   overflow: initial;
-  height: 175px;
-  width: 175px;
-  margin-left: 20px;  //add margin to space images out
+  height: 200px;
+  width: 200px;
 }
 .panel-body:hover	/*make images opaque when user hovers over them to make page interactive*/
 {
@@ -33,14 +32,10 @@ body
 }
 .jumbotron/*Jumbotron background*/
 {
-   background-image: url(images/deals-head.jpg);
+   background-image: url(images/deals-head.jpg); 
    background-repeat: no-repeat;
    background-size:cover;
    color: white;
    font-style: italic ;
    font-size: 200%;
 }
-#dealsHead{
-  background-color:black;
-}
-
