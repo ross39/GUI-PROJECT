@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PC mart</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="Styles.css">
+</head>
+<body>
+  <div class="jumbotron">
+  <div class="container text-center">
+    <h1>Please see a list of our stores below</h1>
+  </div>
+</div>
+
+<!--Navbar code-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      -<a class="navbar-brand" href="#" id = "logo">PC Mart</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="Deals.html">Deals</a></li>
+        <li><a href="Stores.html">Stores</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="yourAccount.html"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--End navbar code-->
+<!-- Gooogle maps code -->
+    <div id="map"></div>
+    <script>
+    //Code for galway map
+       function initMapGalway() {
+        var myLatLng = {lat: 53.2805923, lng:-9.0480249};
+
+          var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Dublin'
+        });
+      }
+    //end code for galway map
+
+    //Start code for Dublin map
+    function initMapDublin() {
+     var myLatLng = {lat: 53.3242381, lng:-6.3857848};
+
+       var map = new google.maps.Map(document.getElementById('map'), {
+       zoom: 4,
+       center: myLatLng
+     });
+
+     var marker = new google.maps.Marker({
+       position: myLatLng,
+       map: map,
+       title: 'Dublin'
+     });
+   }
+    //End code for Dublin map
+
+    //Start code for belfast
+    function initMapBelfast() {
+     var myLatLng = {lat: 54.5949198, lng:-5.9966714};
+
+       var map = new google.maps.Map(document.getElementById('map'), {
+       zoom: 4,
+       center: myLatLng
+     });
+
+     var marker = new google.maps.Marker({
+       position: myLatLng,
+       map: map,
+       title: 'Hello World!'
+     });
+   }
+    //End code for belfast
+
+    //Start code for cork
+    function initMapCork() {
+     var myLatLng = {lat: 51.895999, lng:-8.4980692};
+
+       var map = new google.maps.Map(document.getElementById('map'), {
+       zoom: 4,
+       center: myLatLng
+     });
+
+     var marker = new google.maps.Marker({
+       position: myLatLng,
+       map: map,
+       title: 'Hello World!'
+     });
+   }
+    //End code for cork
+    
+
+
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH8aQ30DxNXpRHnpRiY8vxh_sazvPPExE&callback=initMap">
+    </script>
+    <!-- End of google maps code-->
+
+<ul class="list-group">
+  <li class="list-group-item">Belfast</li>
+  <li class="list-group-item">Galway</li>
+  <li class="list-group-item">Dublin</li>
+  <li class="list-group-item">Cork</li>
+</ul>
+
+</body>
+</html>
