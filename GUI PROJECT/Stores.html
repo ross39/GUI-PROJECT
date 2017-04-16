@@ -44,23 +44,27 @@
     </div>
   </div>
 </nav>
-<!--End navbar code-->
-<!--<p>Please click the store location below to see our store</p>
-<button onclick="Galway()">Galway</button>
-<button onclick="Dublin()">Dublin</button>
-<button onclick="Cork()">Cork</button>
-<button onclick="Belfast()">Belfast</button>
--->
+
 <!-- Dublin Map -->
+<div class="jumbotron">
+  <div class="containter text-center">
+    <h1>View our Dublin Location</h1>
+  </div>
+</div>
 <div class = "map">
-<iframe width="50%" height="300" src="http://www.citymaps.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(PcMart%20)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+<iframe width="50%" height="300" src="http://www.citymaps.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(PcMart%20)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="dublin">
 </iframe>
 </div>
 <br/>
 
-<!-- Cork Map -->
+<!-- Galway Map -->
+<div class="jumbotron">
+  <div class="containter text-center">
+    <h1>View our Galway location Location</h1>
+  </div>
+</div>
 <div class="map">
-<iframe width="50%" height="300" src="http://www.citymaps.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;q=12%20Eyre%20Square+(Pc%20Mart)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+<iframe width="50%" height="300" src="http://www.citymaps.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;q=12%20Eyre%20Square+(Pc%20Mart)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="galway">
 </iframe>
 </div>
 <br/>
@@ -68,8 +72,13 @@
 <br/>
 
 <!-- Belfast Map -->
+<div class="jumbotron">
+  <div class="containter text-center">
+    <h1>View our Belfast Location</h1>
+  </div>
+</div>
 <div class = "map">
-<iframe width="50%" height="300" src="http://www.citymaps.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;q=1%20Belfast+(Pc%20Mart)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+<iframe width="50%" height="300" src="http://www.citymaps.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;q=1%20Belfast+(Pc%20Mart)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="belfast">
 </iframe>
 </div>
 <br/>
@@ -77,13 +86,61 @@
 <br/>
 
 <!-- Cork Map -->
+<div class="jumbotron">
+  <div class="containter text-center">
+    <h1>View our Cork Location</h1>
+  </div>
+</div>
 <div class = "map">
-<iframe width="50%" height="300" align="center" src="http://www.citymaps.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;q=3%20Cork+(Pc%20Mart)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="15px">
+<iframe width="50%" height="300" align="center" src="http://www.citymaps.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;q=3%20Cork+(Pc%20Mart)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="15px" id="cork">
 </iframe>
 </div>
 <br/>
 <br/>
 <br/>
+<input type="button" name="1" value="1" onclick="showDublin()">
+<input type="button" name="2" value="2" onclick="showCork()">
+<input type="button" name="3" value="3" onclick="showBelfast">
+<input type="button" name="4" value="4" onclick="showGalway">
+
+<script>
+function showDublin()
+{
+  document.getElementById('dublin').style.display = "none";
+  document.getElementById('cork').style.display = "block";
+  document.getElementById('galway').style.display = "block";
+  document.getElementById('belfast').style.display = "block";
+}
+
+function showGalway()
+{
+  document.getElementById('galway').style.display = "none";
+  document.getElementById('cork').style.display = "block";
+  document.getElementById('dublin').style.display = "block";
+  document.getElementById('belfast').style.display = "block";
+}
+
+function showCork()
+{
+  document.getElementById('cork').style.display = "none";
+  document.getElementById('dublin').style.display = "block";
+  document.getElementById('galway').style.display = "block";
+  document.getElementById('belfast').style.display = "block";
+}
+
+function showBelfast()
+{
+  document.getElementById('belfast').style.display = "none";
+  document.getElementById('dublin').style.display = "block";
+  document.getElementById('galway').style.display = "block";
+  document.getElementById('cork').style.display = "block";
+}
+
+
+
+
+
+</script>
 
 
 </body>
