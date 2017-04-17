@@ -2,6 +2,14 @@ var quantity = 0;
 var price = 0;
 var amount = 0;
 var previous = parseInt(sessionStorage.cost);
+if(previous  > 0)
+{
+ 	document.getElementById("cost").innerHTML = "<strong>Current amount in cart: €" + previous + "</strong>";
+}
+else
+{
+	document.getElementById("cost").innerHTML = "<strong>Current amount in cart: €0" + "</strong>";
+}
 function add()
 {
 
