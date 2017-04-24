@@ -2,7 +2,7 @@ img	/*set images to be less than that of their original height and allow them to
 {
 	max-height: 200px;
 	max-width: auto;
-  margin-left: 5%;
+  	margin-left: 5%;
 	padding-left: 5%;
 	display: block;
 }
@@ -12,17 +12,19 @@ html
 }
 .jumbotron
 {
- background-image: url(images/products/productHead.jpg);
- overflow: initial;
- color: white;
+	 background-image: url(images/products/productHead.jpg);
+	 overflow: initial;
+	 color: white;
 }
 
-.panel-body{
-  width: 100%;
-  height: 100%;
-  overflow: contain;
+.panel-body
+{
+	 width: 100%;
+	 height: 100%;
+ 	 overflow: contain;
 }
-#productHead{
+#productHead
+{
 	background-color:black;
 }
 h2:hover
@@ -57,7 +59,7 @@ h2:hover
 }
 img:hover	/*make images opaque when user hovers over them to make page interactive*/
 {
-  opacity:0.5;
+  	opacity:0.5;
 }
 #cost
 {
