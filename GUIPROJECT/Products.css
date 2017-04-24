@@ -1,0 +1,65 @@
+img	/*set images to be less than that of their original height and allow them to scale to user display*/
+{
+	max-height: 200px;
+	max-width: auto;
+  margin-left: 5%;
+	padding-left: 5%;
+	display: block;
+}
+html
+{
+ overflow:scroll;
+}
+.jumbotron
+{
+ background-image: url(images/products/productHead.jpg);
+ overflow: initial;
+ color: white;
+}
+
+.panel-body{
+  width: 100%;
+  height: 100%;
+  overflow: contain;
+}
+#productHead{
+	background-color:black;
+}
+h2:hover
+{
+	color: blue;
+	font-style: italic;
+	background-color: green;
+}
+#laptops
+{
+	margin-bottom:10%;
+}
+#graphics
+{
+	margin-top: 30%;
+}
+#monitors
+{
+	margin-top: 30%;
+}
+#processors
+{
+	margin-top: 30%;
+}
+#harddrives
+{
+	margin-top: 30%;
+}
+#miscellaneous
+{
+	margin-top: 30%;
+}
+img:hover	/*make images opaque when user hovers over them to make page interactive*/
+{
+  opacity:0.5;
+}
+#cost
+{
+	font-family: cursive;
+}

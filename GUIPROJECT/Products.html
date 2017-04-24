@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products page</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="Products.css">
+<script src="Reaction.js"></script>
+</head>
+
+<!-- Code for the main heading -->
+  <body>
+    <div class="jumbotron">
+    <div class="container text-center">
+      <h1 id = "productHead"><i>We provide 100% authentic parts for all PCs and laptops</i></h1>
+    </div>
+  </div>
+  <!-- Code for navigator -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        -<a class="navbar-brand" href="#" id = "logo">PC Mart</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li class = "active"><a href="Products.html">Products</a></li>
+          <li><a href="Deals.html">Deals</a></li>
+          <li><a href="Stores.html">Stores</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="yourAccount.html"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+          <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End code for navigator -->
+   <h3 id = "cost"><strong> Current amount in cart: </strong></h3>
+  <!--Div for laptops -->
+<div id = "laptops">
+  <h2>Laptops</h2>
+	<div class="row">  <!--Row for laptops-->
+		<div class="col-sm-4">
+			<div class="panel panel-info">
+				<div class="panel-heading">Dell Inspiron 15 7000</div>
+							<img src = "./images/products/dell1.jpg" alt = "A picture of a dell laptop" title = "Dell Inspirion"/>
+			</div>
+      <div class="panel-footer">
+	         <div id = "price">
+			          <strong>Price: €450</strong>
+	          </div>
+            <div>
+				  <input type = "text" placeholder = "Quantity:" id = 0>   <!-- Allow user to enter quantity-->
+		          <input type = "button" value = "Add all to cart!" onclick = "add()">  <!-- Allow user to add to cart and execute function-->
+            </div>
+      </div>
+    </div>
+
+  <div class="col-sm-4">
+    <div class="panel panel-info">
+        <div class="panel-heading">Macbook Air</div>
+            <img src = "./images/products/macbook.jpeg" alt = "A picture of a macbook air" title = "Macbook air"/>
+    </div>
+    <div class="panel-footer">
+		    <div>
+            <strong>€600</strong>
+        </div>
+          <input type = "text" placeholder = "Quantity:" id = 1>
+          <input type = "button" value = "Add all to cart!" onclick = "add()">
+    </div>
+  </div>
+
+	<div class="col-sm-4">
+    <div class="panel panel-info">
+        <div class="panel-heading">HP Pavillon</div>
+        <img src = "./images/products/hppavillon.jpeg" alt = "A picture of a HP pavillon" title = "HP pavillon"/>
+      </div>
+        <div class="panel-footer">
+		    <div>
+          <strong>Price: €500</strong>
+        </div>
+        <input type = "text" placeholder = "Quantity:" id = 2>
+        <input type = "button" value = "Add all to cart!" onclick = "add()">
+        </div>
+    </div>
+     <div class="col-sm-4">
+       <br>
+       <div class="panel panel-info">
+           <div class="panel-heading">N850 Core i3 Gaming Laptop with Nvidia GeForce GT940mx Graphics Card</div>
+           <img src = "./images/products/gaminglaptop.jpg" alt = "A picture of a N850" title = "N850"/>
+         </div>
+           <div class="panel-footer">
+   		    <div>
+             <strong>Price: €800</strong>
+           </div>
+           <input type = "text" placeholder = "Quantity:" id = 3>
+           <input type = "button" value = "Add all to cart!" onclick = "add()">
+           </div>
+       </div>
+      <div class = "col-sm-4">
+        <br>
+        <div class="panel panel-info">
+           <div class="panel-heading"> Lenovo Thinkpad Yoga 11E (3rd Gen) 11.6" Touchscreen Convertible Ultrabook </div>
+           <img src = "./images/products/lenovo.jpg" alt = "A picture of a Lenovo thinkpad 11e" title = "Lenovo Thinkpad"/>
+         </div>
+           <div class="panel-footer">
+           <div>
+             <strong>Price: €250</strong>
+           </div>
+           <input type = "text" placeholder = "Quantity:" id = 4>
+           <input type = "button" value = "Add all to cart!" onclick = "add()">
+           </div>
+       </div>
+  </div>
+</div>
+<div id = "power">
+  <h2>Power Supply Units</h2>
+    <div class = "col-sm-4">
+      <br>
+      <div class="panel panel-info">
+         <div class="panel-heading"> CORSAIR CXM series CX750M 750W Power Supply</div>
+         <img src = "./images/products/psu1.png" alt = "CX750M Power Supply " title = "CORSAIR CXM series CX750M 750W"/>
+       </div>
+         <div class="panel-footer">
+         <div>
+           <strong>Price: €90</strong>
+         </div>
+         <input type = "text" placeholder = "Quantity:" id = 5>
+         <input type = "button" value = "Add all to cart!" onclick = "add()">
+         </div>
+     </div>
+     <div class = "col-sm-4">
+       <br>
+       <div class="panel panel-info">
+          <div class="panel-heading"> EVGA 600 B1, 80+ Bronze 600W Power Supply</div>
+          <img src = "./images/products/psu2.jpg" alt = "EVGA 600 B1, 80+ BRONZE 600W PSU " title = "EVGA 600 B1, 80+ BRONZE 600W,"/>
+        </div>
+          <div class="panel-footer">
+          <div>
+            <strong>Price: €80</strong>
+          </div>
+          <input type = "text" placeholder = "Quantity:" id = 6>
+          <input type = "button" value = "Add all to cart!" onclick = "add()">
+          </div>
+      </div>
+</div>
+<div id = "graphics">
+<br>
+<h2> Graphics cards</h2>
+<div class = "col-sm-4">
+<br>
+<div class = "panel panel-info">
+<div class = "panel-heading">NVIDIA 960</div>
+<img src = "./images/products/nvidia960.jpg" alt = "a pic of a nvidia 960">
+</div>
+<div class="panel-footer">
+          <div>
+            <strong>Price: €200</strong>
+          </div>
+          <input type = "text" placeholder = "Quantity:" id = 7>
+          <input type = "button" value = "Add all to cart!" onclick = "add()">
+          </div>
+      </div>
+<div class = "col-sm-4">
+	<br>
+	<div class = "panel panel-info">
+			<div class = "panel-heading">AMD R9 380</div>
+				<img src = "./images/products/r9380.jpg" alt = "a pic of a nvidia 960">
+			</div>
+	<div class="panel-footer">
+		<div>
+            <strong>Price: €180</strong>
+        </div>
+          <input type = "text" placeholder = "Quantity:" id = 8>
+          <input type = "button" value = "Add all to cart!" onclick = "add()">
+	</div>
+ </div>
+ </div>
+ <div id = "monitors">
+<br>
+<h2>Monitors</h2>
+<div class = "col-sm-4">
+<br>
+<div class = "panel panel-info">
+<div class = "panel-heading">qnix qx2710</div>
+<img src = "./images/products/qnix.jpg" alt = "a pic of a qnix qx2710">
+</div>
+<div class="panel-footer">
+          <div>
+            <strong>Price: €230</strong>
+          </div>
+          <input type = "text" placeholder = "Quantity:" id = 9>
+          <input type = "button" value = "Add all to cart!" onclick = "add()">
+          </div>
+      </div>
+<div class = "col-sm-4">
+	<br>
+	<div class = "panel panel-info">
+			<div class = "panel-heading">BenQ GW2765HT</div>
+				<img src = "./images/products/benq.jpg" alt = "a pic of a BenQ GW2765HT">
+			</div>
+	<div class="panel-footer">
+		<div>
+            <strong>Price: €300</strong>
+        </div>
+          <input type = "text" placeholder = "Quantity:" id = 10>
+          <input type = "button" value = "Add all to cart!" onclick = "add()">
+	</div>
+ </div>
+ </div>
+<div id = "processors">
+<br>
+<h2>Processors</h2>
+<div class = "col-sm-4">
+<br>
+<div class = "panel panel-info">
+<div class = "panel-heading">amd ryzen 7 1800x</div>
+<img src = "./images/products/amdryzen.png" alt = "amd ryzen 7 1800x">
+</div>
+<div class="panel-footer">
+          <div>
+            <strong>Price: €350</strong>
+          </div>
+          <input type = "text" placeholder = "Quantity:" id = 11>
+          <input type = "button" value = "Add all to cart!" onclick = "add()">
+          </div>
+      </div>
+<div class = "col-sm-4">
+	<br>
+	<div class = "panel panel-info">
+			<div class = "panel-heading">Intel core i5 6600k</div>
+				<img src = "./images/products/corei5.jpg" alt = "a pic of a BenQ GW2765HT">
+			</div>
+	<div class="panel-footer">
+		<div>
+            <strong>Price: €300</strong>
+        </div>
+          <input type = "text" placeholder = "Quantity:" id = 12>
+          <input type = "button" value = "Add all to cart!" onclick = "add()">
+	</div>
+ </div>
+ </div>
+ <div id = "harddrives">
+<br>
+<h2>Hard drives</h2>
+<div class = "col-sm-4">
+	<br>
+	<div class = "panel panel-info">
+		<div class = "panel-heading">Western Digital Red 4 tb</div>
+<img src = "./images/products/wdred.jpg" alt = "WD red 4tb">
+</div>
+<div class="panel-footer">
+          <div>
+            <strong>Price: €150</strong>
+          </div>
+          <input type = "text" placeholder = "Quantity:" id = 13>
+          <input type = "button" value = "Add all to cart!" onclick = "add()">
+          </div>
+      </div>
+<div class = "col-sm-4">
+	<br>
+	<div class = "panel panel-info">
+			<div class = "panel-heading">Kingston SSD 240GB</div>
+				<img src = "./images/products/kingstonssd.jpg" alt = "Kingston SSD">
+			</div>
+	<div class="panel-footer">
+		<div>
+            <strong>Price: €140</strong>
+        </div>
+          <input type = "text" placeholder = "Quantity:" id = 14>
+          <input type = "button" value = "Add all to cart!" onclick = "add()">
+	</div>
+ </div>
+ </div>
+ <div id = "miscellaneous">
+<br>
+<h2>Ram,keyboards and motherboards</h2>
+<div class = "col-sm-4">
+<br>
+<div class = "panel panel-info">
+<div class = "panel-heading">Corsair limited edition dominator 16GB</div>
+<img src = "./images/products/corsair.png" alt = "Corsair dominator">
+</div>
+<div class="panel-footer">
+          <div>
+            <strong>Price: €200</strong>
+          </div>
+          <input type = "text" placeholder = "Quantity:" id = 15>
+          <input type = "button" value = "Add all to cart!" onclick = "add()">
+          </div>
+      </div>
+<div class = "col-sm-4">
+	<br>
+	<div class = "panel panel-info">
+			<div class = "panel-heading">Corsair keyboard mechanical</div>
+				<img src = "./images/products/corsairkeyboard.jpg" alt = "corsair keyboard">
+			</div>
+	<div class="panel-footer">
+		<div>
+            <strong>Price: €80</strong>
+        </div>
+          <input type = "text" placeholder = "Quantity:" id = 16>
+          <input type = "button" value = "Add all to cart!" onclick = "add()">
+	</div>
+ </div>
+ <div class = "col-sm-4">
+	<br>
+	<div class = "panel panel-info">
+			<div class = "panel-heading">MSI Z170</div>
+				<img src = "./images/products/motherboard.png" alt = "MSI Z170">
+			</div>
+	<div class="panel-footer">
+		<div>
+            <strong>Price: €120</strong>
+        </div>
+          <input type = "text" placeholder = "Quantity:" id = 17>
+          <input type = "button" value = "Add all to cart" onclick = "add()">
+	</div>
+ </div>
+ </div>
+ <script src = "products.js"></script>
+</body>
+</html>
