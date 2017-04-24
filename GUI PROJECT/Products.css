@@ -1,8 +1,8 @@
 img	/*set images to be less than that of their original height and allow them to scale to user display*/
 {
-	max-height: 300px;
-	max-width: 90%;
-    margin-left: 5%;
+	max-height: 200px;
+	max-width: auto;
+  margin-left: 5%;
 	padding-left: 5%;
 	display: block;
 }
@@ -31,25 +31,29 @@ h2:hover
 	font-style: italic;
 	background-color: green;
 }
+#laptops
+{
+	margin-bottom:10%;
+}
 #graphics
 {
-	margin-top: 20%;
+	margin-top: 30%;
 }
 #monitors
 {
-	margin-top: 20%;
+	margin-top: 30%;
 }
 #processors
 {
-	margin-top: 20%;
+	margin-top: 30%;
 }
 #harddrives
 {
-	margin-top: 20%;
+	margin-top: 30%;
 }
 #miscellaneous
 {
-	margin-top: 20%;
+	margin-top: 30%;
 }
 img:hover	/*make images opaque when user hovers over them to make page interactive*/
 {
@@ -57,5 +61,5 @@ img:hover	/*make images opaque when user hovers over them to make page interacti
 }
 #cost
 {
-	
+	font-family: cursive;
 }
