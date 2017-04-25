@@ -1,1 +1,9 @@
-document.getElementById("total").innerHTML = "Total amount in cart: €" + sessionStorage.cost;
+if(parseInt(sessionStorage.cost)  > 0)
+{
+ 	document.getElementById("total").innerHTML = "<strong>Current amount in cart: €" + sessionStorage.cost + "</strong>";
+}
+else
+{
+	document.getElementById("total").innerHTML = "<strong>Current amount in cart: €0" + "</strong>";
+}
+
