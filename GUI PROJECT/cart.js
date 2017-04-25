@@ -1,4 +1,4 @@
-if(parseInt(sessionStorage.cost)  > 0)
+if(parseInt(sessionStorage.cost) > 0)
 {
  	document.getElementById("total").innerHTML = "<strong>Current amount in cart: €" + sessionStorage.cost + "</strong>";
 }
