@@ -9,7 +9,7 @@ img	/*set images to be less than that of their original height and allow them to
 }
 html
 {
- overflow:scroll;
+	 overflow:scroll;
 }
 .jumbotron
 {
