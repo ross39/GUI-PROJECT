@@ -40,7 +40,6 @@ function add()
 	{
       if(document.getElementById(i) != 0)
       {
-         JSON.parse(localStorage["itemArr"]);
          itemArr[i].quan = document.getElementById(i).value;
          itemArr[i].totalQuan = parseInt(itemArr[i].totalQuan + itemArr[i].quan);
          amount += itemArr[i].price * itemArr[i].quan;
