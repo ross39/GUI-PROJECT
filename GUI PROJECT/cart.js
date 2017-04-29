@@ -1,3 +1,5 @@
+var discount = "10OFF";
+var done = false;
 if(parseInt(localStorage.cost) > 0)
 {
  	document.getElementById("total").innerHTML = "<strong>Current amount in cart: €" + localStorage.cost + "</strong>";
@@ -6,15 +8,30 @@ else
 {
 	document.getElementById("total").innerHTML = "<strong>Current amount in cart: €0" + "</strong>";
 }
-var cartArr = JSON.parse(localStorage.itemArr);
-for(var i = 0; i < 17; i++)
+if(localStorage.itemArr != null)
 {
-    var cost = parseInt(cartArr[i].price);
-    var quantity = parseInt(cartArr[i].totalQuan);
-    if(quantity > 0)
-    {
-      document.getElementById("list").innerHTML += "<ul>"+ "Item Number: " + (i + 1) +" Price of item: " + cost + " Quantity: " + quantity + " Total cost of item(s): " + cost * quantity + "</ul>";
-    }
+  var cartArr = JSON.parse(localStorage.itemArr);
+  for(var i = 0; i < 17; i++)
+  {
+      var cost = parseInt(cartArr[i].price);
+      var quantity = parseInt(cartArr[i].totalQuan);
+      if(quantity > 0)
+      {
+        document.getElementById("list").innerHTML += "<ul>"+ "Item Number: " + (i + 1) +" Price of item: " + cost + " Quantity: " + quantity + " Total cost of item(s): " + cost * quantity + "</ul>";
+      }
+  }
+}
+function dis()
+{
+  var disc = document.getElementById("disc").value;
+  if(disc == discount && done == false)
+  {
+    localStorage.cost = parseInt(localStorage.cost - localStorage.cost * 0.1);
+    alert("You have been granted a discount of 10% off please refresh page")
+  }
+  else {
+    alert("You have either already claimed the offer or you do not have the right code");
+  }
 }
 function buy()
 {
