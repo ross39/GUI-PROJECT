@@ -3,7 +3,8 @@ var price = 0;
 var amount = 0;
 var previous = parseInt(localStorage.cost);
 var itemArr = new Array(17);
-if(previous  > 0)
+
+if(previous  > 0) //get previous values if > 0
 {
  	document.getElementById("cost").innerHTML = "<strong>Current amount in cart: €" + previous + "</strong>";
 }
@@ -17,7 +18,7 @@ function item(price,quan,totalQuan)
   this.quan = quan;
   this.totalQuan = totalQuan;
 }
-itemArr[0] = new item(450,0,0);
+itemArr[0] = new item(450,0,0); //item object Array
 itemArr[1] = new item(600,0,0);
 itemArr[2] = new item(500,0,0);
 itemArr[3] = new item(800,0,0);
@@ -55,6 +56,6 @@ function add()
 				 localStorage.cost = amount;
 				 document.getElementById("cost").innerHTML = "<strong>Current amount in cart: €" + localStorage.cost + "</strong>";
 			}
-      localStorage["itemArr"] = JSON.stringify(itemArr);
     }
+    localStorage["itemArr"] = JSON.stringify(itemArr); //store Object array as string
   }

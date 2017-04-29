@@ -1,0 +1,22 @@
+.jumbotron
+{
+	 background-image: url(images/carthead.jpg);
+	 color: white;
+   background-size: 1920px 1080px;
+   background-position: center;
+   background-color: black;
+   background-repeat:no-repeat;
+}
+#list
+{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: georgia, Times;
+}
+
+#list:hover{
+  font-weight: bold;
+  font-style: italic;
+  color: blue;
+  text-shadow: 2px 2px #000000;
+}

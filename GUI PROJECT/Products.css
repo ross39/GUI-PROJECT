@@ -14,7 +14,7 @@ html
 .jumbotron
 {
 	 background-image: url(images/products/productHead.jpg);
-	 overflow: initial;
+	 overflow:contain;
 	 color: white;
 }
 
