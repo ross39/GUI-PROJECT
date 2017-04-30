@@ -63,6 +63,6 @@ function add()
 			}
     }
 
-      localStorage["itemArr"] = JSON.stringify(itemArr);
+      localStorage["itemArr"] = JSON.stringify(itemArr);  //Convert object array and store as string
 
 }
