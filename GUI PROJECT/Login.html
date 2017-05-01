@@ -1,21 +1,101 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>PC Mart</title>
+<title>PC mart</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width,height=device-height initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel = "icon" href = "./images/favicon-logo.png">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="Styles.css">
+<link rel="stylesheet" type="text/css" href="Products.css">
+<script src="Login.js"></script>
 </head>
 
+<!-- Code for the main header-->
 <body>
-  <div class="jumbotron">
+  <body>
+    <div class="jumbotron">
+    <div class="container text-center">
+      <h1>Sign In</h1>
+    </div>
+  </div>
 
+  <title>Admin</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row main">
+      <div class="main-login main-center">
+        <form name="email" class="" method="post" action="#">
+		
+	<nav class="navbar navbar-inverse" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      -<a class="navbar-brand" href="#" id = "logo">PC Mart</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="Deals.html">Deals</a></li>
+        <li><a href="Stores.html">Stores</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+		 <li class = "active"><a href="LogIn.html">Log In</a></li>
+		 <li><a href="SignUp.html"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+        <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+  </nav>
 
+		
+          <div class="form-group">
+            <label for="email" class="cols-sm-2 control-label">Email</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" name="email" id="email" placeholder="Enter your Email"/>
+              </div>
+            </div>
+          </div>
+			<br>
+          <div class="form-group">
+            <label for="password" class="cols-sm-2 control-label">Password</label>
+			<a href="Security.html"> Forgot Password? </a>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                <input type="password" class="form-control" name="password" id="password" action=required placeholder="Enter your Password"/>
+              </div>
+            </div>
+          </div>
 
+  <input type="checkbox" name="vehicle" value="Bike"> Keep me signed in <br>
+		<br>
+          <div class="form-group ">
+            <a target="_blank" type="button" id="button" onclick="logInStorage()" class="btn btn-primary btn-lg btn-block login-button" >Log In</a>
+          </div>
+		  
+		  <div class="form-group ">
+            <a href="SignUp.html" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Sign up</a>
+          </div>
+		  
+		  
+        </form>
+      </div>
+    </div>
+  </div>
 
-</body>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+ </body>
+</html>
