@@ -8,7 +8,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="Styles.css">
+<link rel="stylesheet" type="text/css" href="Products.css">
+<script src="Security.js"></script>
 </head>
 
 <!-- Code for the main header-->
@@ -27,17 +28,35 @@
     <div class="row main">
       <div class="main-login main-center">
         <form class="" method="post" action="#">
+		<nav class="navbar navbar-inverse" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      -<a class="navbar-brand" href="#" id = "logo">PC Mart</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="Deals.html">Deals</a></li>
+        <li><a href="Stores.html">Stores</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+		 <li><a href="LogIn.html">Log In</a></li>
+		 <li><a href="SignUp.html"><span class="glyphicon glyphicon-user"></span>SignUp</a></li>
+        <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-		<select placeholder= "Please Select">
-		  <option value="Blank">Please Select</option>
-		  <option value="Q1">What is the last name of the teacher in sixth class?</option>
-		  <option value="Q2">What was your favorite food as a child?</option>
-		  <option value="Q3">What is your favorite movie?</option>
-		  <option value="Q4">What is your mothers maiden name?</option>
-		  <option value="Q5">What is the name of your first pet??</option>
-		</select>
+		<p>Whaht is the name of your first pet</p>
 		<br>
-		</br>
           <div class="form-group">
             <label for="ans" class="cols-sm-2 control-label">Answer</label>
             <div class="cols-sm-10">
@@ -48,12 +67,14 @@
             </div>
           </div>
          
+		 <div class="form-group ">
+            <a target="_blank" type="button" id="button" onclick="securityAns()" class="btn btn-primary btn-lg btn-block login-button" >Log In</a>
+          </div>
 
   
 
    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
