@@ -41,7 +41,10 @@ function add()
 {
 	for(var i = 0; i < 17; i++)
 	{
+    if(localStorage.itemArr == null)
+    {
       localStorage.isActive = 0;
+    }
       if(document.getElementById(i) != 0)
       {
          var prev = parseInt(itemArr[i].totalQuan);
